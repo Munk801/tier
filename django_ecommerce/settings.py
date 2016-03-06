@@ -129,6 +129,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
 	'main',
+	'contact',
 	'django.contrib.flatpages',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
