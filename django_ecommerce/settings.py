@@ -2,6 +2,9 @@
 
 import os
 
+STRIPE_SECRET = 'sk_test_ref9ymmWkcDMX0IUwn7Y9iew'
+STRIPE_PUBLISHABLE = 'pk_test_4bcOH57WXyTNAHFX0t20uSYD'
+
 PROJECT_ROOT = os.path.realpath(os.path.dirname(__file__))
 SITE_ROOT = os.path.dirname(PROJECT_ROOT)
 
