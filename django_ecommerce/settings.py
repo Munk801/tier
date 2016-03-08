@@ -2,6 +2,8 @@
 
 import os
 
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'
+
 STRIPE_SECRET = 'sk_test_ref9ymmWkcDMX0IUwn7Y9iew'
 STRIPE_PUBLISHABLE = 'pk_test_4bcOH57WXyTNAHFX0t20uSYD'
 

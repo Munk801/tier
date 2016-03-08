@@ -75,6 +75,7 @@ def register(request):
 				user.save()
 			except IntegrityError:
 				form.addError(user.email + ' is already a member')
+				user = None
 			else:
 				request.session['user'] = user.pk
 				return HttpResponseRedirect('/')
