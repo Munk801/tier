@@ -9,5 +9,3 @@ class ContactView(ModelForm):
 	class Meta:
 		fields = ['name', 'email', 'topic', 'message']
 		model = ContactForm
-
-

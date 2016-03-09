@@ -31,20 +31,19 @@ def sign_in(request):
 					return HttpResponseRedirect('/')
 				else:
 					form.addError('Incorrect email address or password')
-			else:
-				form.addError('Incorrect email address or password')
 		else:
-			form = SigninForm()
-		print form.non_field_errors()
-
-		return render_to_response(
-			'sign_in.html',
-			{
-				'form' : form,
-				'user' : user
-			},
-			context_instance=RequestContext(request)
-		)
+			form.addError('Incorrect email address or password')
+	else:
+		form = SigninForm()
+	print form.non_field_errors()
+	return render_to_response(
+		'sign_in.html',
+		{
+			'form' : form,
+			'user' : user
+		},
+		context_instance=RequestContext(request)
+	)
 
 def sign_out(request):
 	""" If the user signs out, remove the session from the request. """
