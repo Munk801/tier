@@ -7,7 +7,7 @@ class ContactForm(models.Model):
 	topic = models.CharField(max_length=200)
 	timestamp = models.DateTimeField(
 		auto_now_add=True,
-		default=datetime.datetime.now
+		# default=datetime.datetime.now
 	)
 
 	def __unicode(self):
