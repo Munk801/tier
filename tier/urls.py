@@ -8,8 +8,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
 	url(r'^$', 'main.views.index', name='home'),
     # Examples:
-    # url(r'^$', 'django_ecommerce.views.home', name='home'),
-    # url(r'^django_ecommerce/', include('django_ecommerce.foo.urls')),
+    # url(r'^$', 'tier.views.home', name='home'),
+    # url(r'^tier/', include('tier.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

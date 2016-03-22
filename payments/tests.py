@@ -7,7 +7,7 @@ Replace this with more appropriate tests for your application.
 from django.shortcuts import render_to_response
 from django.test import TestCase, RequestFactory
 from django.core.urlresolvers import resolve
-import django_ecommerce.settings as settings
+import tier.settings as settings
 from payments.models import User
 from payments.forms import UserForm
 from payments.views import soon, register

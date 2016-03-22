@@ -1,4 +1,4 @@
-# Django settings for django_ecommerce project.
+# Django settings for tier project.
 
 import os
 
@@ -114,10 +114,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'django_ecommerce.urls'
+ROOT_URLCONF = 'tier.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'django_ecommerce.wsgi.application'
+WSGI_APPLICATION = 'tier.wsgi.application'
 
 TEMPLATE_DIRS = (
 	os.path.join(SITE_ROOT, 'templates'),

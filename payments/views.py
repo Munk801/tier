@@ -4,7 +4,7 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from payments.forms import SigninForm, CardForm, UserForm
 from payments.models import User
-import django_ecommerce.settings as settings
+import tier.settings as settings
 import stripe
 import datetime
 
