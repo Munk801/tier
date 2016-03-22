@@ -1,7 +1,14 @@
- h1 {
+ h1, .nav li, .navbar-brand {
 	 font-family: 'dosis';
+ }
+
+ .navbar-brand {
+	 height: 40px;
  }
 
  .center-text {
 	 text-align: center;
+ }
+ .featurette-divider {
+	 margin: 80px 0;
  }
