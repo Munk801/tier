@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
+{% load marketing %}
 
 <center>
 	<section id="myCarousel" class="carousel slide" data-ride="carousel" style="max-width: 960px;">
@@ -59,24 +60,9 @@
 <section class="container marketing">
 	<!-- Three columns of text below the carousel -->
 	<div class="row center-text">
-		<div class="col-lg-4">
-			<img class="img-circle" src="{% static 'img/marketing_0.png' %}" width="140" height="140" alt="Placeholder">
-			<h2>Host your esports event</h2>
-			<p>Get all the tools you need to set up your own esports event.</p>
-			<p><a class="btn btn-default" href="#" role="button">Sign Up Now &raquo;</a></p>
-		</div>
- 		<div class="col-lg-4">
-			<img class="img-circle" src="{% static 'img/marketing_1.png' %}" width="140" height="140" alt="Placeholder">
-			<h2>Fill your brackets</h2>
-			<p>Get sign ups online and watch your brackets fill up!</p>
-			<p><a class="btn btn-default" href="#" role="button">Sign Up Now &raquo;</a></p>
-		</div>
-  		<div class="col-lg-4">
-			<img class="img-circle" src="{% static 'img/marketing_2.png' %}" width="140" height="140" alt="Placeholder">
-			<h2>Manage your entries</h2>
-			<p>Take payments and increase your prize pool</p>
-			<p><a class="btn btn-default" href="#" role="button">Sign Up Now &raquo;</a></p>
-		</div>
+		{% circle_header_item img_name='marketing_0.png' heading='Host your esports event' caption='Get all the tools you need to set up your own esports event.' %}
+ 		{% circle_header_item img_name='marketing_1.png' heading='Fill your brackets' caption='Get sign ups online and watch your brackets fill up!' %}
+ 		{% circle_header_item img_name='marketing_2.png' heading='Manage your entries' caption='Take payments and increase your prize pool' %}
 	</div>
 </section>
 
