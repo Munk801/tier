@@ -1,50 +1,83 @@
 {% extends 'base.html' %}
 {% block content %}
+{% load static %}
 
- <div class="jumbotron">
-   <img src="http://tischlerei-weissenbacher.at/img/responsive_web_design.png">
-   <h1>Please put some text here.</h1>
-   <p class="lead">If you want, you can add some text here as well. Or not.</p>
-   <a class="btn btn-large btn-success" href="/register">Register today to get started!</a><br/><br/><br/>
-   <a href="https://twitter.com/RealPython" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @RealPython</a>
-   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-   </script>
-   &nbsp;&nbsp;&nbsp;&nbsp;
-   <a href="https://twitter.com/intent/tweet?screen_name=RealPython" class="twitter-mention-button" data-size="large">Send us a Tweet to @RealPython</a>
-   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-   </script>
-   &nbsp;&nbsp;&nbsp;&nbsp;
-   <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.realpython.com" data-text="Django for the Non-Programmer #realpython -" data-size="large">Share!</a>
-   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-   </script>
- </div>
+<center>
+	<section id="myCarousel" class="carousel slide" data-ride="carousel" style="max-width: 960px;">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+ 			<li data-target="#myCarousel" data-slide-to="3"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<figure class="item active">
+				<img src="{% static 'img/esports_1.jpg' %}" alt="Find amazing events" style="max-height: 540px;">
+				<figcaption class="carousel-caption">
+				<h1>Find Amazing Events</h1>
+					<p>Find amazing local events to attend</p>
+					<p><a class="btn btn-lg btn-primary" href="{% url 'register' %}" role="button">Sign up today</a></p>
+				</figcaption>
+			</figure>
+ 			<figure class="item">
+				<img src="{% static 'img/esports_2.jpg' %}" alt="Enter and Prove Your Worth" style="max-height: 540px;">
+				<figcaption class="carousel-caption">
+				<h1>Enter and Prove Your Worth</h1>
+					<p>Prove you are the best player in your zone.</p>
+					<p><a class="btn btn-lg btn-primary" href="#" role="button">Join the best</a></p>
+				</figcaption>
+			</figure>
+ 			<figure class="item">
+				<img src="{% static 'img/esports_3.jpg' %}" alt="Be a part of a community" style="max-height: 540px;">
+				<figcaption class="carousel-caption">
+				<h1>Be a Part of the Community</ht>
+					<p>Support your Local Esports Scene</p>
+					<p><a class="btn btn-lg btn-primary" href="#" role="button">Support your Clan</a></p>
+				</figcaption>
+			</figure>
+  			<figure class="item">
+				<img src="{% static 'img/esports_4.jpg' %}" alt="Find Your Next Tournament" style="max-height: 540px;">
+				<figcaption class="carousel-caption">
+				<h1>Build Teams and Reign Supreme</ht>
+					<p>Easily organize teams for your next scrim.</p>
+					<p><a class="btn btn-lg btn-primary" href="#" role="button">Find Your Next Tourney</a></p>
+				</figcaption>
+			</figure>
+		</div>
+		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+ 		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</section>
+</center>
 
-<hr>
+<br><br>
 
-<div class="row-fluid marketing">
-  <div class="span6">
-    <h3>(1) One</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut dui ac nisi vestibulum accumsan. Praesent gravida nulla vitae arcu blandit, non congue elit tempus. Suspendisse quis vestibulum diam.</p>
-    <h3>(2) Two</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut dui ac nisi vestibulum accumsan. Praesent gravida nulla vitae arcu blandit, non congue elit tempus. Suspendisse quis vestibulum diam.</p>
-    <h3>(3) Three</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut dui ac nisi vestibulum accumsan. Praesent gravida nulla vitae arcu blandit, non congue elit tempus. Suspendisse quis vestibulum diam.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut dui ac nisi vestibulum accumsan. Praesent gravida nulla vitae arcu blandit, non congue elit tempus. Suspendisse quis vestibulum diam.</p>
-</div>
-
-  <div class="span6">
-    <h3>(4) Four</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut dui ac nisi vestibulum accumsan. Praesent gravida nulla vitae arcu blandit, non congue elit tempus. Suspendisse quis vestibulum diam.</p>
-    <h3>(5) Five</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut dui ac nisi vestibulum accumsan. Praesent gravida nulla vitae arcu blandit, non congue elit tempus. Suspendisse quis vestibulum diam.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut dui ac nisi vestibulum accumsan. Praesent gravida nulla vitae arcu blandit, non congue elit tempus. Suspendisse quis vestibulum diam.</p>
-    <h3>(6) Six</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut dui ac nisi vestibulum accumsan. Praesent gravida nulla vitae arcu blandit, non congue elit tempus. Suspendisse quis vestibulum diam.</p>
-    </p>
-  </div>
-
-</div>
+<section class="container marketing">
+	<!-- Three columns of text below the carousel -->
+	<div class="row center-text">
+		<div class="col-lg-4">
+			<img class="img-circle" src="{% static 'img/marketing_0.png' %}" width="140" height="140" alt="Placeholder">
+			<h2>Host your esports event</h2>
+			<p>Get all the tools you need to set up your own esports event.</p>
+			<p><a class="btn btn-default" href="#" role="button">Sign Up Now &raquo;</a></p>
+		</div>
+ 		<div class="col-lg-4">
+			<img class="img-circle" src="{% static 'img/marketing_1.png' %}" width="140" height="140" alt="Placeholder">
+			<h2>Fill your brackets</h2>
+			<p>Get sign ups online and watch your brackets fill up!</p>
+			<p><a class="btn btn-default" href="#" role="button">Sign Up Now &raquo;</a></p>
+		</div>
+  		<div class="col-lg-4">
+			<img class="img-circle" src="{% static 'img/marketing_2.png' %}" width="140" height="140" alt="Placeholder">
+			<h2>Manage your entries</h2>
+			<p>Take payments and increase your prize pool</p>
+			<p><a class="btn btn-default" href="#" role="button">Sign Up Now &raquo;</a></p>
+		</div>
+	</div>
+</section>
 
 {% endblock %}
-
-
