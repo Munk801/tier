@@ -1,7 +1,7 @@
 {% extends "__base.html" %}
 {% block content %}
 {% load static %}
-{% load marketing %}
+{% load main_marketing %}
 
 <center>
 	<section id="myCarousel" class="carousel slide" data-ride="carousel" style="max-width: 960px;">
@@ -60,9 +60,9 @@
 <section class="container marketing">
 	<!-- Three columns of text below the carousel -->
 	<div class="row center-text">
-		{% circle_header_item img_name='marketing_0.png' heading='Host your esports event' caption='Get all the tools you need to set up your own esports event.' %}
- 		{% circle_header_item img_name='marketing_1.png' heading='Fill your brackets' caption='Get sign ups online and watch your brackets fill up!' %}
- 		{% circle_header_item img_name='marketing_2.png' heading='Manage your entries' caption='Take payments and increase your prize pool' %}
+		{% marketing__circle_item img_name='marketing_0.png' heading='Host your esports event' caption='Get all the tools you need to set up your own esports event.' %}
+ 		{% marketing__circle_item img_name='marketing_1.png' heading='Fill your brackets' caption='Get sign ups online and watch your brackets fill up!' %}
+ 		{% marketing__circle_item img_name='marketing_2.png' heading='Manage your entries' caption='Take payments and increase your prize pool' %}
 	</div>
 </section>
 

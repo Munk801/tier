@@ -2,6 +2,10 @@
 	 font-family: 'dosis';
  }
 
+ #brand {
+	 height: 40px;
+ };
+
  .navbar-brand {
 	 height: 40px;
  }
